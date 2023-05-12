@@ -30,6 +30,8 @@ test("maze solver", function () {
 
     // there is only one path through
     const result = maze_solver(maze, "x", { x: 10, y: 0 }, { x: 1, y: 5 });
+    console.log('Maze: ', maze);
+    console.log('Result: ', result);
     expect(drawPath(maze, result)).toEqual(drawPath(maze, mazeResult));
 });
 
