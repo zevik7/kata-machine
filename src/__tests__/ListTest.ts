@@ -23,4 +23,11 @@ export function test_list(list: List<number>): void {
     expect(list.remove(9)).toEqual(9);
     expect(list.length).toEqual(2);
     expect(list.get(0)).toEqual(7);
+
+    list.remove(5);
+    list.remove(7);
+
+    list.insertAt(99, 0);
+    list.insertAt(100, 1);
+    list.insertAt(101, 1);
 }
